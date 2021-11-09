@@ -9,10 +9,6 @@ RUN npm run build
 # production stage
 FROM nginxinc/nginx-unprivileged  as production-stage
 
-
-## Remove default nginx index page
-RUN rm -rf /usr/share/nginx/html/*
-
 EXPOSE 80
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
