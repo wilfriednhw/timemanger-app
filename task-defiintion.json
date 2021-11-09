@@ -7,7 +7,13 @@
       "environmentFiles": null,
       "logConfiguration": null,
       "entryPoint": null,
-      "portMappings": [],
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "http",
+          "containerPort": 8080
+        }
+      ],
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
