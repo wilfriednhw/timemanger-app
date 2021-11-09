@@ -39,7 +39,7 @@ env:
   # ECS_SERVICE: vue-app-frontend              # set this to your Amazon ECS service name
   ECS_CLUSTER: vue-app-frontend # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
-    ${{ secrets.AWS_TASK_DEFINITION }}
+    task-defiintion.json
     # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME:
